@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    color: #ededed;
+    background-color: #081b29;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #ff5450;
+    
+}
+.Home {
+    height: 100vh;
+    background: url('home.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.projects {
+    height: 100vh;
+    background: #081b29;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding:  10%;
+}
+.project-content{
+    max-width: 600px;
+    background: #081b29;
+}
+.contactme {
+    height: 100vh;
+    background: #081b29;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+   
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.container h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+    position:fixed; left:139px; top:78px; background-color:transparent;
+    color: #ff5450;
+    
+}
+.container h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.contact-content h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    position:fixed; left:139px; top:285px; background-color:transparent;
+    color: #ededed;
+}
+.contact-content h10{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    position:fixed; left:139px; top:385px; background-color:transparent;
+    color: #ededed;
+}
+.contact-content h15{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    position:absolute; left:139px; top:115px; background-color:transparent;
+    color: #ff5450;
+}
+.contact-content h11{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    position:fixed; left:139px; top:485px; background-color:transparent;
+    color: #ededed;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#ff5450;
+}
+.links :hover{
+    color: #ff5450;
+    transition: .5s;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+display: flex;
+justify-content: space-between;
+ width: 345px;
+ height: 50px;
+ 
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #ff5450;
+    border: 2px solid #ff5450;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+color: #ff5450;
+
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #ff5450;
+
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #ff5450;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff5450;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ff5450;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.home-sci a:hover{
+    color: #081b29;
+
+}
+.home-sci a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff5450;
+    z-index: -1;
+    transition: 0.5s;
+}
+.home-sci a:hover::before{
+    width: 100%;
+
+}
+mark.blue{
+    color: #ff5450;
+    background: none;
+}
+
+#portfolio{
+    padding: 50px 0;
+    
+}
+.work-list {
+position: absolute;
+justify-content: top;
+align-items: center;
+margin-top: 10px;
+display: grid;
+min-width: 100px;
+grid-template-columns: repeat(3,minmax(300px, 300px));
+column-gap: 80px;
+row-gap: 40px;
+top: 170px;
+background: #081b29;
+}
+.work{
+width: 350px;
+height: 450px;
+object-fit: contain;
+object-position: center;
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+background: #081b29;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff5450);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff5450;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background:#fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
